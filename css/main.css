@@ -10,7 +10,26 @@ body {
 	height: 500px;
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.text {
+	color: blue;
+	font-family: fantasy;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	padding-right: 40px;
+	padding-top: 100px;
+	display: inline-block;
+	width: 225px;
+}
+
+.text .ryu-pose {
+	color: red;
+	padding-top: 30px;
+
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	background-repeat: no-repeat;
 }
 
@@ -29,12 +48,12 @@ body {
 	float:left;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
 }
 
@@ -48,4 +67,8 @@ body {
 
 .ryu-throwing {
 	background-image: url('https://raw.githubusercontent.com/aphuong/jquery-streetfighter/master/images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+	background-image: url('https://raw.githubusercontent.com/aphuong/jquery-streetfighter/master/images/ryu-cool.gif');
 }

@@ -1,12 +1,15 @@
 $(document).ready(function() {
+
 	$('.ryu').mouseenter(function() {
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
 	})
+
 	.mouseleave(function() {
 		$('.ryu-ready').hide();
 		$('.ryu-still').show();
 	})
+
 	.mousedown(function() {
 		playHadouken();
 		$('.ryu-ready').hide();
@@ -21,9 +24,19 @@ $(document).ready(function() {
 		}
 	  );
 	})
+
 	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
+	})
+
+	$(document).keydown(function(event) {
+		if (event.which == 88) {
+			event.preventDefault();
+			$('.ryu-ready').hide();
+			$('.ryu-still').hide();
+			$('.ryu-cool').show();
+		}
 	});
 });
 
