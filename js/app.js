@@ -4,6 +4,7 @@ $(document).ready(function() {
 		$('.ryu-ready').show();
 	})
 	.mouseleave(function() {
-		alert('mouse leave');
+		$('.ryu-ready').hide();
+		$('.ryu-still').show();
 	});
-});
+})
