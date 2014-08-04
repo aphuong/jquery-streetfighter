@@ -10,6 +10,25 @@ body {
 	height: 500px;
 }
 
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+	background-repeat: no-repeat;
+}
+
+.hadouken {
+	background-image: url('https://raw.githubusercontent.com/aphuong/jquery-streetfighter/master/images/hadouken.gif');
+	width: 156px;
+	height: 90px;
+	display: none;
+	float: left;
+	position: relative;
+	top: 167px;
+	left: -212px;
+}
+
+.ryu {
+	float:left;
+}
+
 .ryu-ready, .ryu-still, .ryu-throwing {
 	width: 659px;
 	height: 494px;
@@ -29,19 +48,4 @@ body {
 
 .ryu-throwing {
 	background-image: url('https://raw.githubusercontent.com/aphuong/jquery-streetfighter/master/images/ryu-throwing-hadouken.png');
-}
-
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
-	background-repeat: no-repeat;
-}
-
-.hadouken {
-	background-image: url('https://raw.githubusercontent.com/aphuong/jquery-streetfighter/master/images/hadouken.gif');
-	width: 156px;
-	height: 90px;
-	display: none;
-	position: relative;
-	top: 167px;
-	left: -212px;
-	float: left;
 }
