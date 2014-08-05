@@ -12,7 +12,7 @@ body {
 
 .text {
 	color: blue;
-	font-family: fantasy;
+	font-family: cursive;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 25px;
@@ -20,6 +20,9 @@ body {
 	padding-right: 40px;
 	padding-top: 100px;
 	display: inline-block;
+	float: right;
+	margin-top: -500px;
+	margin-right: 200px;
 	width: 225px;
 }
 
